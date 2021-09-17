@@ -9,7 +9,8 @@
                         <x-jet-application-mark class="block h-9 w-auto" />
                     </a>
                 </div>
-
+                <div class="flex-shrink-0 mr-3">
+                        
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">

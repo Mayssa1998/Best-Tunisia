@@ -31,9 +31,6 @@
                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                 </label>
             </div>
-            <x-slot name="anchor">
-	   Don't have an account yet. <a class="underline" href="{{ route('register') }}">Sign up</a> now.
-	</x-slot>
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
@@ -48,7 +45,9 @@
             </div>
         </form>
         
-    
+    <x-slot name="anchor">
+	   Don't have an account yet. <a class="underline" href="{{ route('register') }}">Sign up</a> now.
+	</x-slot>
         
     </x-jet-authentication-card>
 	
